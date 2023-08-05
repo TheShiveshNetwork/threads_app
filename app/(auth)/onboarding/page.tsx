@@ -3,7 +3,7 @@ import { currentUser } from "@clerk/nextjs"
 
 async function Page() {
     const user = await currentUser();
-    
+
     const userInfo = {}
 
     const userData = {
@@ -25,8 +25,8 @@ async function Page() {
 
             <section className="mt-9 bg-dark-2 p-10">
                 <AccountProfile
-                user={userData}
-                btnTitle="Continue"
+                    user={userData}
+                    btnTitle="Continue"
                 />
             </section>
         </main>
